@@ -14,10 +14,10 @@ from PIL import Image
 from progressbar import progressbar
 from torch.utils.data import DataLoader
 
-from inference.data.mask_mapper import MaskMapper
-from inference.data.test_datasets import LongTestDataset
-from inference.inference_core import InferenceCore
-from model.network import XMem
+from xmem.inference.data.mask_mapper import MaskMapper
+from xmem.inference.data.test_datasets import LongTestDataset
+from xmem.inference.inference_core import InferenceCore
+from xmem.model.network import XMem
 
 try:
     import hickle as hkl

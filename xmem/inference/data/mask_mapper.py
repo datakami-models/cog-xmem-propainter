@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from dataset.util import all_to_onehot
+from xmem.dataset.util import all_to_onehot
 
 
 class MaskMapper:

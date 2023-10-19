@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
 
-from model.modules.deformconv import ModulatedDeformConv2d
-from .misc import constant_init
+from propainter.model.modules.deformconv import ModulatedDeformConv2d
+from propainter.model.misc import constant_init
 
 class SecondOrderDeformableAlignment(ModulatedDeformConv2d):
     """Second-order deformable alignment module."""

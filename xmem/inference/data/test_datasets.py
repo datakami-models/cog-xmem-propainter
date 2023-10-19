@@ -2,7 +2,7 @@ import os
 from os import path
 import json
 
-from inference.data.video_reader import VideoReader
+from xmem.inference.data.video_reader import VideoReader
 
 
 class LongTestDataset:
