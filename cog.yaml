@@ -1,0 +1,38 @@
+# Configuration for Cog ⚙️
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+
+  # a list of ubuntu apt packages to install
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "ffmpeg"
+  
+  # python version in the form '3.11' or '3.11.4'
+  python_version: "3.11"
+
+  # a list of packages in the format <package-name>==<version>
+  python_packages:
+  - "gdown==4.7.1"
+  - "GitPython==3.1.37"
+  - "hickle==5.0.2"
+  - "numpy==1.24.4"
+  - "progressbar2==4.2.0"
+  - "tensorboard==2.14.0"
+  - "tensorboard-data-server==0.7.1"
+  - "opencv-python==4.8.1.78"
+  - "torchvision==0.15.2"
+  - "torch==2.0.1"
+
+  # commands run after the environment is setup
+  # run:
+  #   - "echo env is ready!"
+  #   - "echo another command if needed"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
+
+# the name of the image on Replicate
+image: "r8.im/jd7h/xmem"
