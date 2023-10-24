@@ -18,3 +18,9 @@ __pycache__
 
 # Exclude example folder
 example/
+
+# Exclude development inputs and results
+results/
+output*.mp4
+result*.mp4
+inputs/
