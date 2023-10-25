@@ -4,10 +4,10 @@ Cog pipeline for XMem and ProPainter
 [![Replicate](https://replicate.com/jd7h/xmem-propainter-pipeline/badge)](https://replicate.com/jd7h/xmem-propainter-inpainting/)
 
 This is a [cog](https://github.com/replicate/cog) image for a generative AI pipeline that combines two models: 
-- [XMem](), a model for video object segmentation
-- [ProPainter](), a model for video inpainting
+- [XMem](https://github.com/jd7h/XMem), a model for video object segmentation
+- [ProPainter](https://github.com/jd7h/ProPainter), a model for video inpainting
 
-This pipeline that can be used for easy video inpainting. 
+This pipeline can be used for easy video inpainting. 
 XMem turns a source video and an annotated first frame into a video mask.
 ProPainter takes a source video and a video mask and fills everything under the mask with inpainting. 
 
